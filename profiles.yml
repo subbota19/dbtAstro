@@ -1,0 +1,7 @@
+duckdb_project:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "/home/yauheni/main/codeDomain/duckPy/db_storage/university"
+      threads: 4

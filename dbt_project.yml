@@ -1,7 +1,12 @@
-name: duckdb_project
+name: 'sales_and_marketing_dwh'
 version: '1.0'
-config-version: 2
+profile: 'duckdb'
 
-model-paths: [ "models" ]
-
-profile: duckdb_project
+models:
+  sales_and_marketing_dwh:
+    staging:
+      +schema: staging
+    core:
+      +schema: core
+    data_products:
+      +schema: data_products

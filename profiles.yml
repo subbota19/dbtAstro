@@ -1,7 +1,7 @@
-duckdb_project:
+duckdb:
   target: dev
   outputs:
     dev:
       type: duckdb
-      path: "/home/yauheni/main/codeDomain/duckPy/db_storage/university"
+      path: "/home/yauheni/main/codeDomain/dbtAstro/db/sales.duckdb"
       threads: 4

@@ -3,6 +3,10 @@ version: 2
 models:
   - name: core_sales
     description: "Cleaned and integrated sales data"
+    tests:
+      - no_negative_sales_amounts:
+          error_if: "=0"
+          warn_if: "=0"
     columns:
       - name: sale_id
         description: "Unique identifier for each sale"

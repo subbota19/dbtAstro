@@ -26,7 +26,7 @@ run-test: run test
 
 clean:
 	@echo "Cleaning dbt project..."
-	dbt clean --project-dir $(DBT_PROJECT_DIR)
+	dbt clean
 
 all: install run test generate serve
 	@echo "Done. Serving docs..."

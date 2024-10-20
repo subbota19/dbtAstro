@@ -163,3 +163,4 @@ cython_debug/
 .dbt/
 db/
 dbt_packages/
+logs/

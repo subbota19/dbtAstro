@@ -3,6 +3,6 @@ duckdb:
   outputs:
     dev:
       type: duckdb
-      path: "/usr/local/duckdb/sales.duckdb"
+      path: "/usr/local/airflow/duckdb/sales.duckdb"
 #      path: "/home/yauheni/main/codeDomain/dbtAstro/db/sales.duckdb"
       threads: 4

@@ -4,5 +4,18 @@ duckdb:
     dev:
       type: duckdb
       path: "/usr/local/airflow/duckdb/sales.duckdb"
-#      path: "/home/yauheni/main/codeDomain/dbtAstro/db/sales.duckdb"
       threads: 4
+
+postgres:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: host.docker.internal
+      port: 5433
+      user: airflow_user
+      password: "12345678"
+      dbname: dbt
+      schema: raw
+      threads: 4
+      keepalives_idle: 0

@@ -1,12 +1,15 @@
 name: 'sales_and_marketing_dwh'
 version: '1.0'
-profile: 'duckdb'
+profile: "{{ env_var('DBT_PROFILE', 'postgres')}}"
 
 models:
   sales_and_marketing_dwh:
     staging:
       +schema: staging
+      +tags: ['staging']
     core:
       +schema: core
+      +tags: [ 'core' ]
     data_products:
       +schema: data_products
+      +tags: [ 'data_products' ]

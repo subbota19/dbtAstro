@@ -10,19 +10,23 @@ models:
     columns:
       - name: sale_id
         description: "Unique identifier for each sale"
+        tags: ["test"]
         tests:
           - unique
           - not_null
       - name: customer_id
         description: "Identifier for the customer"
+        tags: ["test"]
         tests:
           - not_null
       - name: amount
         description: "Sale amount"
+        tags: ["test"]
         tests:
           - not_null
       - name: date
         description: "Date of sale"
+        tags: ["test"]
         tests:
           - not_null
 
@@ -31,15 +35,18 @@ models:
     columns:
       - name: campaign_id
         description: "Unique identifier for each campaign"
+        tags: ["test"]
         tests:
           - unique
           - not_null
       - name: channel
         description: "Marketing channel used"
+        tags: ["test"]
         tests:
           - not_null
       - name: budget
         description: "Budget allocated for the campaign"
+        tags: ["test"]
         tests:
           - not_null
 
@@ -48,18 +55,22 @@ models:
     columns:
       - name: customer_id
         description: "Unique identifier for each customer"
+        tags: ["test"]
         tests:
           - unique
           - not_null
       - name: first_name
         description: "First name of the customer"
+        tags: ["test"]
         tests:
           - not_null
       - name: last_name
         description: "Last name of the customer"
+        tags: ["test"]
         tests:
           - not_null
       - name: signup_date
         description: "Signup date of the customer"
+        tags: ["test"]
         tests:
           - not_null
